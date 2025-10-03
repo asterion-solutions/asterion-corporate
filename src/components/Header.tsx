@@ -17,8 +17,8 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('home')}>
-            <img src="/as-removebg-preview.png" alt="Asterion Logo" className="h-12 w-12" />
-            <span className="text-2xl font-bold text-blue-600">Asterion</span>
+            <img src="/asterion2.png" alt="Asterion Logo" className="h-10 w-auto" />
+            {/* <span className="text-2xl font-bold text-blue-600">Asterion</span> */}
           </div>
 
           <div className="hidden md:flex space-x-8">

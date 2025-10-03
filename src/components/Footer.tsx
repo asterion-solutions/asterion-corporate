@@ -14,8 +14,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/as-removebg-preview.png" alt="Asterion Logo" className="h-10 w-10" />
-              <span className="text-2xl font-bold">Asterion</span>
+              <img src="/asterion3.png" alt="Asterion Logo" className="h-20 w-auto" />
+              {/* <span className="text-2xl font-bold">Asterion</span> */}
             </div>
             <p className="text-gray-400 leading-relaxed">
               Smart, tailored IT solutions for your business.
