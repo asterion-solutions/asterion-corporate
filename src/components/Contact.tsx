@@ -47,8 +47,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <a href="mailto:info@asterion.com" className="text-lg text-gray-900 hover:text-blue-600 transition-colors">
-                      info@asterion.com
+                    <a href="mailto:info@asterionsolutions.com" className="text-lg text-gray-900 hover:text-blue-600 transition-colors">
+                      info@asterionsolutions.com
                     </a>
                   </div>
                 </div>
