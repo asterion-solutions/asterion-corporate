@@ -1,16 +1,19 @@
 import { Briefcase, TrendingUp, Clock } from 'lucide-react';
+import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function Portfolio() {
+  const RefAnimate = useScrollAnimation();
+
   return (
-    <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-white flex items-center" ref={RefAnimate}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="opacity-0 text-center mb-16" data-animate="animate-fade-up" data-delay="0.5s" >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-12 text-center shadow-lg">
+          <div className="opacity-0 bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-12 text-center shadow-lg" data-animate="animate-zoom-in-up" data-delay="1s" >
             <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
               <Briefcase className="text-blue-600" size={40} />
             </div>

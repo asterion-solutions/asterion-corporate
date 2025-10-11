@@ -1,16 +1,18 @@
 import { Users, Zap, Target } from 'lucide-react';
+import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function About() {
+  const RefAnimate = useScrollAnimation();
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white flex items-center " ref={RefAnimate}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="opacity-0 text-center mb-16" data-animate="animate-fade-up" data-delay="0.5s" >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div data-animate="animate-fade-right" data-delay="0.9s" className="opacity-0">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               At Asterion, we believe every business deserves technology that works for them.
             </p>
@@ -23,7 +25,7 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-lg opacity-0" data-animate="animate-zoom-in-up" data-delay="1s">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">

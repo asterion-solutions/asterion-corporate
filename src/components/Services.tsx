@@ -1,6 +1,9 @@
 import { Settings, Database, Smartphone, TrendingUp } from 'lucide-react';
+import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function Services() {
+  const RefAnimate = useScrollAnimation();
+
   const services = [
     {
       icon: Settings,
@@ -25,9 +28,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50 flex items-center" ref={RefAnimate}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="opacity-0 text-center mb-16" data-animate="animate-fade-up" data-delay="0.5s" >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Services</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
@@ -36,7 +39,9 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="opacity-0 bg-white p-8 rounded-lg shadow-md transition-all duration-500 transform scale-90 hover:scale-105 hover:shadow-xl"
+              data-animate="animate-zoom-in"
+              data-delay={`${0.5 * (index + 1)}s`}
             >
               <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-lg mb-4">
                 <service.icon className="text-blue-600" size={28} />

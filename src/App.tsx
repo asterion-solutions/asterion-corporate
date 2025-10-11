@@ -10,12 +10,14 @@ function App() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Footer />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <Portfolio />
+          <Contact />
+        </main>
+        <Footer />
     </div>
   );
 }

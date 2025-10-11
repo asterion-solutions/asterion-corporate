@@ -7,3 +7,130 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Animation */
+
+/* Fade Up */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+/* Fade Down */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-down {
+  animation: fade-down 0.8s ease-out forwards;
+}
+
+/* Fade Left */
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-fade-left {
+  animation: fade-left 0.8s ease-out forwards;
+}
+
+/* Fade Right */
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-fade-right {
+  animation: fade-right 0.8s ease-out forwards;
+}
+
+/* Flip Left */
+@keyframes flip-left {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+.animate-flip-left {
+  animation: flip-left 0.8s ease-out forwards;
+  transform-origin: left center;
+}
+
+#home, #about, #services, #portfolio, #contact{
+  min-height: 100dvh;
+}
+/* Flip Right */
+@keyframes flip-right {
+  from {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+.animate-flip-right {
+  animation: flip-right 0.8s ease-out forwards;
+  transform-origin: right center;
+}
+
+/* Zoom In */
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-zoom-in {
+  animation: zoom-in 0.8s ease-out forwards;
+}
+
+/* Zoom In Up */
+@keyframes zoom-in-up {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-zoom-in-up {
+  animation: zoom-in-up 0.8s ease-out forwards;
+}
