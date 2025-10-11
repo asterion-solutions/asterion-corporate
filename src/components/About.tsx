@@ -1,70 +1,123 @@
-import { Users, Zap, Target } from 'lucide-react';
+import { Users, Zap, Target } from "lucide-react";
 import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function About() {
   const RefAnimate = useScrollAnimation();
+
   return (
-    <section id="about" className="py-20 bg-white flex items-center " ref={RefAnimate}>
+    <section
+      id="about"
+      ref={RefAnimate}
+      className="py-20 bg-white flex items-center"
+      aria-labelledby="about-heading"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="opacity-0 text-center mb-16" data-animate="animate-fade-up" data-delay="0.5s" >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+        {/* Section Title */}
+        <header
+          className="opacity-0 text-center mb-16"
+          data-animate="animate-fade-up"
+          data-delay="0.5s"
+        >
+          <h2
+            id="about-heading"
+            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+          >
+            About Asterion IT Solutions
+          </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
-        </div>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Learn more about who we are, what drives us, and how we build
+            innovative IT solutions that empower businesses to grow.
+          </p>
+        </header>
 
+        {/* Content Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div data-animate="animate-fade-right" data-delay="0.9s" className="opacity-0">
+          {/* Left Content */}
+          <article
+            data-animate="animate-fade-right"
+            data-delay="0.9s"
+            className="opacity-0"
+          >
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              At Asterion, we believe every business deserves technology that works for them.
+              <strong>Asterion IT Solutions</strong> is built on one belief:
+              every business deserves technology that works for them — not
+              against them.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              We're a team of IT professionals and friends who joined forces to build practical, reliable, and future-ready solutions for companies of all sizes. From startups to growing enterprises, we help businesses thrive by making their operations smarter, faster, and more connected.
+              We’re a passionate team of IT professionals united by the goal of
+              crafting reliable, scalable, and efficient digital solutions for
+              businesses of all sizes. Whether you’re a startup or a growing
+              enterprise, we create tools that make your operations smarter,
+              faster, and more connected.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed font-semibold text-blue-600">
-              Our approach is simple: we listen first, then build what you actually need.
+            <p className="text-lg text-gray-700 leading-relaxed font-semibold">
+              Our approach is simple: <em>we listen first, then build what you
+              actually need.</em>
             </p>
-          </div>
+          </article>
 
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-lg opacity-0" data-animate="animate-zoom-in-up" data-delay="1s">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
+          {/* Right Content (Highlights) */}
+          <aside
+            className="relative"
+            aria-label="Our core values"
+          >
+            <div
+              className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-lg opacity-0"
+              data-animate="animate-zoom-in-up"
+              data-delay="1s"
+            >
+              <ul className="space-y-6">
+                <li className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                      <Users className="text-white" size={24} />
+                      <Users className="text-white" size={24} aria-hidden="true" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Team-Driven</h3>
-                    <p className="text-gray-600">Built by professionals who care about your success</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Team-Driven
+                    </h3>
+                    <p className="text-gray-600">
+                      Built by professionals who care deeply about your success.
+                    </p>
                   </div>
-                </div>
+                </li>
 
-                <div className="flex items-start space-x-4">
+                <li className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                      <Zap className="text-white" size={24} />
+                      <Zap className="text-white" size={24} aria-hidden="true" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Future-Ready</h3>
-                    <p className="text-gray-600">Technology solutions designed to scale with you</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Future-Ready
+                    </h3>
+                    <p className="text-gray-600">
+                      Scalable technology designed to evolve with your business.
+                    </p>
                   </div>
-                </div>
+                </li>
 
-                <div className="flex items-start space-x-4">
+                <li className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                      <Target className="text-white" size={24} />
+                      <Target className="text-white" size={24} aria-hidden="true" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Results-Focused</h3>
-                    <p className="text-gray-600">Practical solutions that deliver real business value</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      Results-Focused
+                    </h3>
+                    <p className="text-gray-600">
+                      Delivering practical, measurable business outcomes.
+                    </p>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
