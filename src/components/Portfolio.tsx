@@ -1,4 +1,5 @@
-import { Briefcase, TrendingUp, Clock } from "lucide-react";
+import { BotMessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function Portfolio() {
@@ -28,59 +29,52 @@ export default function Portfolio() {
           <div className="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
         </div>
 
-        {/* Portfolio Highlight */}
-        <div
-          className="opacity-0 bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-12 text-center shadow-lg"
-          data-animate="animate-zoom-in-up"
-          data-delay="1s"
-        >
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
-            <Briefcase className="text-blue-600" size={40} aria-hidden="true" />
-          </div>
-
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Building Success Stories
-          </h3>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            We collaborate with small and medium-sized enterprises to design
-            digital solutions that simplify workflows, boost efficiency, and
-            drive measurable growth. Stay tuned—our full portfolio showcase is
-            coming soon!
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <div
-              className="bg-white rounded-lg p-6 shadow-md"
-              data-animate="animate-fade-up"
-              data-delay="1.2s"
-            >
-              <div className="flex items-center justify-center mb-4">
-                <TrendingUp className="text-blue-600" size={32} aria-hidden="true" />
+        {/* CMP Portfolio Highlight */}
+        <div className="grid gap-6 md:grid-cols-2">
+          <div
+            className="opacity-0 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 rounded-3xl p-6 md:p-8 shadow-2xl border border-indigo-100"
+            data-animate="animate-zoom-in-up"
+            data-delay="1s"
+          >
+            <div className="flex items-start gap-3">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-indigo-100 rounded-xl">
+                <BotMessageSquare size={28} className="text-indigo-600" />
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                Growing Together
-              </h4>
-              <p className="text-gray-600">
-                Partnering with businesses to achieve digital transformation and
-                sustainable growth through modern web solutions.
-              </p>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-indigo-600 font-semibold">CMP Integration</p>
+                <h3 className="mt-2 text-2xl font-bold text-slate-900">Conversational Support for Business Sites</h3>
+                <p className="mt-2 text-slate-600 text-sm md:text-base leading-relaxed">
+                  Embed a lightweight AI chat widget with knowledge-base responses, real-time messaging, and agent escalation to improve conversions and reduce support load.
+                </p>
+              </div>
             </div>
 
-            <div
-              className="bg-white rounded-lg p-6 shadow-md"
-              data-animate="animate-fade-up"
-              data-delay="1.4s"
-            >
-              <div className="flex items-center justify-center mb-4">
-                <Clock className="text-blue-600" size={32} aria-hidden="true" />
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
+              <div className="rounded-xl bg-white border border-indigo-100 p-3">
+                <p className="text-xs uppercase tracking-[0.15em] text-indigo-600">Features</p>
+                <ul className="mt-2 text-slate-700 text-sm list-disc list-inside space-y-1">
+                  <li>AI chat widget</li>
+                  <li>Custom API tools</li>
+                  <li>Quick replies</li>
+                </ul>
               </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                Coming Soon
-              </h4>
-              <p className="text-gray-600">
-                A collection of success stories and case studies from our
-                innovative client projects will be showcased here soon.
-              </p>
+              <div className="rounded-xl bg-white border border-indigo-100 p-3">
+                <p className="text-xs uppercase tracking-[0.15em] text-indigo-600">Benefits</p>
+                <ul className="mt-2 text-slate-700 text-sm list-disc list-inside space-y-1">
+                  <li>Faster support</li>
+                  <li>Better accuracy</li>
+                  <li>Secure tenant access</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-5">
+              <Link
+                to="/cmp"
+                className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-indigo-500 transition"
+              >
+                View Product Details
+              </Link>
             </div>
           </div>
         </div>
