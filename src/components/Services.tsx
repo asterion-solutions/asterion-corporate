@@ -1,39 +1,67 @@
-import { Settings, Database, Smartphone, TrendingUp } from "lucide-react";
+import { Settings, Database, Smartphone, TrendingUp, Bot, Puzzle, Monitor, FolderSync, Gamepad2 } from "lucide-react";
 import { useScrollAnimation } from "../hook/useScrollAnimation";
 
 export default function Services() {
   const RefAnimate = useScrollAnimation();
 
-  const services = [
-    {
-      icon: Settings,
-      title: "Custom IT Solutions",
-      description:
-        "Tailored IT systems designed specifically for your business challenges and goals.",
-      keywords: "custom software, IT solutions, system development",
-    },
-    {
-      icon: Database,
-      title: "Business Systems",
-      description:
-        "From inventory and sales tracking to multi-platform integrations like Asterion Sync, we create tools that simplify your operations and improve efficiency.",
-      keywords: "business systems, automation tools, integration software",
-    },
-    {
-      icon: Smartphone,
-      title: "Web & App Development",
-      description:
-        "Modern, responsive websites and mobile apps built to showcase your brand, enhance user experience, and engage customers effectively.",
-      keywords: "web development, mobile apps, responsive design",
-    },
-    {
-      icon: TrendingUp,
-      title: "Consulting & Automation",
-      description:
-        "We analyze your workflows and apply smart automation to streamline operations, reduce manual work, and increase productivity.",
-      keywords: "business consulting, workflow automation, process optimization",
-    },
-  ];
+ const services = [
+  {
+    icon: Settings,
+    title: "Custom System Engineering",
+    description:
+      "Purpose-built IT systems tailored to your workflows, ensuring scalability, reliability, and long-term efficiency.",
+    keywords: "custom software, IT systems, system architecture",
+  },
+  {
+    icon: Database,
+    title: "Business Process Systems",
+    description:
+      "Operational tools for inventory, sales, and multi-platform workflows that simplify processes and improve control.",
+    keywords: "business systems, automation tools, operations management",
+  },
+  {
+    icon: Smartphone,
+    title: "Web & Mobile Experiences",
+    description:
+      "Modern, responsive web and mobile applications designed to elevate your brand and deliver seamless user experiences.",
+    keywords: "web development, mobile apps, UI UX design",
+  },
+  {
+    icon: TrendingUp,
+    title: "Automation & Optimization",
+    description:
+      "Streamline operations with intelligent automation that reduces manual work and boosts overall productivity.",
+    keywords: "workflow automation, process optimization, efficiency",
+  },
+  {
+    icon: FolderSync,
+    title: "Real-Time Data Sync",
+    description:
+      "Reliable cross-platform synchronization that keeps your data consistent, accurate, and always up to date.",
+    keywords: "data sync, real-time integration, system connectivity",
+  },
+  {
+    icon: Bot,
+    title: "AI-Powered Solutions",
+    description:
+      "Enhance customer interactions and decision-making with AI-driven systems built for automation and insight.",
+    keywords: "AI systems, machine learning, intelligent automation",
+  },
+  {
+    icon: Puzzle,
+    title: "Advanced Integrations",
+    description:
+      "Connect complex systems, APIs, and legacy platforms into a unified and efficient digital ecosystem.",
+    keywords: "API integration, system integration, enterprise solutions",
+  },
+  {
+    icon: Monitor,
+    title: "Interactive Platforms",
+    description:
+      "Engaging and dynamic platforms, including dashboards and interactive systems, built for performance and usability.",
+    keywords: "interactive systems, dashboards, frontend systems",
+  },
+];
 
   return (
     <section

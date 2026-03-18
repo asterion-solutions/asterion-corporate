@@ -75,7 +75,9 @@ export default function CmpProductPage() {
               Want faster support conversion? Add CMP in minutes and let your website answer customers automatically, then escalate to your team only when needed.
             </p>
             <div className="mt-3 inline-flex gap-2">
-              <button className="rounded-lg bg-cyan-400 px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-cyan-300">Book Demo</button>
+                <a href="https://agent-hub.asterionsolutions.com" target="_blank" rel="noopener noreferrer" className="inline-block rounded-lg bg-cyan-400 px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-cyan-300">
+                  Start Demo
+                </a>
               <button className="rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-100 hover:bg-slate-700">Learn More</button>
             </div>
           </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="3Sgxb0s8gcPl_p46d_Q4bMmpuuwposl4ktpSDQZDC3U" />
     <title>Asterion IT Solutions | Smart, Tailored Systems for Businesses</title>
-    <!-- <link rel="stylesheet" href="https://chat-widget.asterionsolutions.com/widget.css"> -->
+    <link rel="stylesheet" href="https://chat-widget.asterionsolutions.com/widget.css">
     <meta
       name="description"
       content="Asterion provides tailored IT systems, business solutions, and web development for modern enterprises."
@@ -67,11 +67,18 @@
     <script type="module" src="/src/main.tsx"></script>
 
     <!-- CMP Chat Widget (example integration) -->
-   <script
+   <!-- <script
         src="http://localhost:5173/src/main.tsx"
         data-tenant-id="tenant_a_123"
         data-access-key="APIKEY"
         type="module">
+
+    </script> -->
+    <script>
+      window.CMP_CONFIG = {
+        tenantId: "tenant_a_123",
+        accessKey: "5c2703da-c275-41a0-a539-aaaeb27b2b40"
+      };
 
     </script>
     <script src="https://chat-widget.asterionsolutions.com/widget.js"></script>
