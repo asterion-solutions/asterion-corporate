@@ -95,7 +95,8 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Asterion IT Solutions. All rights
+            
+            &copy; {new Date().getFullYear()} <img src="/asterion.png" alt="Asterion IT Solutions Logo" className="h-6 w-auto inline-block ml-1" /> Asterion IT Solutions. All rights
             reserved.
           </p>
         </div>
